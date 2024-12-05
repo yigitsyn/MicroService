@@ -3,6 +3,8 @@ package com.microservices.department_service.dto;
 import com.microservices.department_service.entity.Department;
 import org.springframework.stereotype.Component;
 
+import java.util.UUID;
+
 @Component
 public class DtoConverter {
 

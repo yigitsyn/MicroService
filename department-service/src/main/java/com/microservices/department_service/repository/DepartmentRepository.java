@@ -1,10 +1,19 @@
 package com.microservices.department_service.repository;
 
+import com.microservices.department_service.dto.DepartmentDto;
 import com.microservices.department_service.entity.Department;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface DepartmentRepository extends JpaRepository<Department, Long> {
+import java.util.Optional;
 
-    Department findByDepartmentCode(String departmentCode);
+public interface DepartmentRepository extends JpaRepository<Department, String> {
+
+    Optional<Department> findByDepartmentCode(String departmentCode);
+
+    Optional<Department> findByDepartmentName(String departmentName);
+
+    Optional<Department> findByDepartmentDescription(String description);
+
+
 
 }
