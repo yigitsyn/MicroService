@@ -6,11 +6,9 @@ import com.microservices.employee_service.dto.EmployeeDto;
 import com.microservices.employee_service.entity.Employee;
 import com.microservices.employee_service.repository.EmployeeRepository;
 
-import com.microservices.employee_service.service.externalAPI.ApiClient;
 import com.microservices.employee_service.service.externalAPI.Client;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
-import org.springframework.web.reactive.function.client.WebClient;
 
 @Service
 public class EmployeeService {
@@ -36,9 +34,10 @@ public class EmployeeService {
             Employee employee = employeeRepository.findById(employeeId)
                     .orElseThrow(() -> new RuntimeException("Employee not found"));
 
+            //RestTemplate
             //DepartmentDto departmentDto = apiClient.getDepartment(employee.getDepartmentCode());
 
-            // WebFlux
+            // WebClient
             //DepartmentDto departmentDto = webClient.get().uri("http://localhost:8080/api/department/{departmentCode}", employee.getDepartmentCode()).retrieve().bodyToMono(DepartmentDto.class).block();
             DepartmentDto  departmentDto = client.getDepartment(employee.getDepartmentCode());
             if(employee.getDepartmentCode().equalsIgnoreCase(departmentDto.getDepartmentCode())){

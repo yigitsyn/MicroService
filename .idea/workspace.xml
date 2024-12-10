@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db7aaeb4-0adc-43e8-80be-1023012fe4d9" name="Changes" comment="vs">
-      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/service/externalAPI/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/microservice/api_gateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/microservice/api_gateway/ApiGatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/department-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/department-service/src/main/java/com/microservices/department_service/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/com/microservices/department_service/controller/DepartmentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/department-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/EmployeeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/EmployeeServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/service/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-registry/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/service-registry/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="db7aaeb4-0adc-43e8-80be-1023012fe4d9" name="Changes" comment="API Gateway is added. Eureka server properties are added." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +19,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/employee-service" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -57,7 +43,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.ApiGatewayApplication.executor": "Debug",
     "Spring Boot.DepartmentServiceApplication.executor": "Run",
-    "Spring Boot.EmployeeServiceApplication.executor": "Run",
+    "Spring Boot.EmployeeServiceApplication.executor": "Debug",
     "Spring Boot.ServiceRegistryApplication.executor": "Run",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/myigi/OneDrive/Desktop/MicroService/api-gateway",
@@ -181,7 +167,7 @@
       <workItem from="1732907215721" duration="16065000" />
       <workItem from="1733167080711" duration="17191000" />
       <workItem from="1733238157918" duration="9000" />
-      <workItem from="1733348901071" duration="20999000" />
+      <workItem from="1733348901071" duration="21310000" />
     </task>
     <task id="LOCAL-00001" summary="vs">
       <option name="closed" value="true" />
@@ -199,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733059590882</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="API Gateway is added. Eureka server properties are added.">
+      <option name="closed" value="true" />
+      <created>1733851246363</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1733851246363</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +212,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="vs" />
-    <option name="LAST_COMMIT_MESSAGE" value="vs" />
+    <MESSAGE value="API Gateway is added. Eureka server properties are added." />
+    <option name="LAST_COMMIT_MESSAGE" value="API Gateway is added. Eureka server properties are added." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
