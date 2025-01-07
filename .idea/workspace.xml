@@ -4,28 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db7aaeb4-0adc-43e8-80be-1023012fe4d9" name="Changes" comment="API Gateway is added. Eureka server properties are added.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/dto/ProjectDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/controller/ProjectController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/dto1/CollaboratorsDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/dto1/DtoConverterMapStruct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/dto1/ProjectResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/entity/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/repository/ProjectRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/service/ProjectService.java" afterDir="false" />
+    <list default="true" id="db7aaeb4-0adc-43e8-80be-1023012fe4d9" name="Changes" comment="Project project mvc design is implemented. Converting an employeeId from a string to a long integer for UUID">
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/enums/EmployeeStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/department-service/src/main/java/com/microservices/department_service/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/com/microservices/department_service/entity/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/department-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/dto/APIResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/dto/APIResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/dto/EmployeeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/dto/EmployeeDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/project-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/project-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,11 +27,12 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/employee-service" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectColorInfo">{
@@ -59,6 +50,7 @@
     "Maven.department-service [clean].executor": "Run",
     "Maven.department-service [compile].executor": "Run",
     "Maven.department-service [package].executor": "Run",
+    "Maven.employee-service [clean].executor": "Run",
     "Maven.project-service [clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -66,19 +58,20 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.ApiGatewayApplication.executor": "Debug",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
+    "Spring Boot.ConfigServerApplication.executor": "Run",
     "Spring Boot.DepartmentServiceApplication.executor": "Debug",
-    "Spring Boot.EmployeeServiceApplication.executor": "Debug",
+    "Spring Boot.EmployeeServiceApplication.executor": "Run",
     "Spring Boot.ProjectServiceApplication.executor": "Run",
     "Spring Boot.ServiceRegistryApplication.executor": "Run",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/myigi/OneDrive/Desktop/MicroService/project-service",
+    "last_opened_file_path": "C:/Users/myigi/OneDrive/Desktop/MicroService/config-server",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Problems",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
@@ -109,13 +102,13 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProjectServiceApplication">
-    <configuration name="EmployeeServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.microservices.employee_service.EmployeeServiceApplication" />
-      <module name="employee-service" />
+  <component name="RunManager" selected="Spring Boot.EmployeeServiceApplication">
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.api_gateway.ApiGatewayApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.microservices.employee_service.*" />
+          <option name="PATTERN" value="com.microservice.api_gateway.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="api-gateway" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.api_gateway.ApiGatewayApplication" />
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.config_server.ConfigServerApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.microservice.api_gateway.*" />
+          <option name="PATTERN" value="com.microservice.config_server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,13 +143,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProjectServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="project-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.project_service.project_service.ProjectServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ServiceRegistryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="service-registry" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.service_registry.service_registry.ServiceRegistryApplication" />
@@ -171,18 +157,17 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.EmployeeServiceApplication" />
-      <item itemvalue="Spring Boot.ProjectServiceApplication" />
       <item itemvalue="Spring Boot.DepartmentServiceApplication" />
       <item itemvalue="Spring Boot.EmployeeServiceApplication" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.ServiceRegistryApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ConfigServerApplication" />
         <item itemvalue="Spring Boot.ApiGatewayApplication" />
         <item itemvalue="Spring Boot.ServiceRegistryApplication" />
-        <item itemvalue="Application.EmployeeServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +193,12 @@
       <workItem from="1733167080711" duration="17191000" />
       <workItem from="1733238157918" duration="9000" />
       <workItem from="1733348901071" duration="41560000" />
-      <workItem from="1733985139961" duration="528000" />
+      <workItem from="1733985139961" duration="788000" />
+      <workItem from="1734353027855" duration="1787000" />
+      <workItem from="1735411073285" duration="4597000" />
+      <workItem from="1735675293192" duration="822000" />
+      <workItem from="1736215920724" duration="1708000" />
+      <workItem from="1736217639926" duration="1049000" />
     </task>
     <task id="LOCAL-00001" summary="vs">
       <option name="closed" value="true" />
@@ -234,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733851246363</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Project project mvc design is implemented. Converting an employeeId from a string to a long integer for UUID">
+      <option name="closed" value="true" />
+      <created>1733985885358</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733985885358</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +252,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="vs" />
     <MESSAGE value="API Gateway is added. Eureka server properties are added." />
-    <option name="LAST_COMMIT_MESSAGE" value="API Gateway is added. Eureka server properties are added." />
+    <MESSAGE value="Project project mvc design is implemented. Converting an employeeId from a string to a long integer for UUID" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project project mvc design is implemented. Converting an employeeId from a string to a long integer for UUID" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -265,11 +264,6 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/service/EmployeeService.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/service/externalAPI/ApiClient.java</url>
           <line>26</line>
           <option name="timeStamp" value="8" />
@@ -278,11 +272,6 @@
           <url>file://$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/service/externalAPI/ApiClient.java</url>
           <line>20</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/service/EmployeeService.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/department-service/target/generated-sources/annotations/com/microservices/department_service/dto/DepartmentMapperImpl.java</url>
@@ -303,11 +292,6 @@
           <url>file://$PROJECT_DIR$/department-service/target/generated-sources/annotations/com/microservices/department_service/dto/DepartmentMapperImpl.java</url>
           <line>32</line>
           <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/employee-service/src/main/java/com/microservices/employee_service/service/EmployeeService.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/department-service/src/main/java/com/microservices/department_service/service/DepartmentService.java</url>
