@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db7aaeb4-0adc-43e8-80be-1023012fe4d9" name="Changes" comment="project-service with spring cloud, feign client and spring-config-server." />
+    <list default="true" id="db7aaeb4-0adc-43e8-80be-1023012fe4d9" name="Changes" comment="vs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,50 +35,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.EmployeeServiceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Maven.department-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.department-service [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.department-service [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.employee-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.project-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.project-service [compile].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ApiGatewayApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.DepartmentServiceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.EmployeeServiceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ProjectServiceApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;Spring Boot.ServiceRegistryApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/myigi/OneDrive/Desktop/MicroService&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.EmployeeServiceApplication.executor": "Debug",
+    "Maven.department-service [clean].executor": "Run",
+    "Maven.department-service [compile].executor": "Run",
+    "Maven.department-service [package].executor": "Run",
+    "Maven.employee-service [clean].executor": "Run",
+    "Maven.project-service [clean].executor": "Run",
+    "Maven.project-service [compile].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ApiGatewayApplication.executor": "Debug",
+    "Spring Boot.ConfigServerApplication.executor": "Debug",
+    "Spring Boot.DepartmentServiceApplication.executor": "Debug",
+    "Spring Boot.EmployeeServiceApplication.executor": "Debug",
+    "Spring Boot.ProjectServiceApplication.executor": "Debug",
+    "Spring Boot.ServiceRegistryApplication.executor": "Debug",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/myigi/OneDrive/Desktop/MicroService",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory",
+      "module"
     ]
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -93,7 +96,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProjectServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.microservice.api_gateway.ApiGatewayApplication" />
@@ -160,11 +163,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.DepartmentServiceApplication" />
+      <item itemvalue="Spring Boot.EmployeeServiceApplication" />
+      <item itemvalue="Spring Boot.ApiGatewayApplication" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.ProjectServiceApplication" />
+      <item itemvalue="Spring Boot.ServiceRegistryApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ProjectServiceApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplication" />
         <item itemvalue="Spring Boot.ApiGatewayApplication" />
+        <item itemvalue="Spring Boot.ProjectServiceApplication" />
         <item itemvalue="Spring Boot.ServiceRegistryApplication" />
       </list>
     </recent_temporary>
@@ -210,7 +221,8 @@
       <workItem from="1742152970745" duration="8000" />
       <workItem from="1742153020018" duration="169000" />
       <workItem from="1742175654628" duration="5110000" />
-      <workItem from="1742770285868" duration="9759000" />
+      <workItem from="1742770285868" duration="10258000" />
+      <workItem from="1742851043217" duration="1293000" />
     </task>
     <task id="LOCAL-00001" summary="vs">
       <option name="closed" value="true" />
@@ -260,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742850295016</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="vs">
+      <option name="closed" value="true" />
+      <created>1742850842423</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742850842423</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,11 +298,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="vs" />
     <MESSAGE value="API Gateway is added. Eureka server properties are added." />
     <MESSAGE value="Project project mvc design is implemented. Converting an employeeId from a string to a long integer for UUID" />
     <MESSAGE value="Spring Cloud Config-Server is implemented." />
     <MESSAGE value="project-service with spring cloud, feign client and spring-config-server." />
-    <option name="LAST_COMMIT_MESSAGE" value="project-service with spring cloud, feign client and spring-config-server." />
+    <MESSAGE value="vs" />
+    <option name="LAST_COMMIT_MESSAGE" value="vs" />
   </component>
 </project>

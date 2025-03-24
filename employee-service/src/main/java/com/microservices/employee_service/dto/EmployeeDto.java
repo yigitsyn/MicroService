@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class EmployeeDto {
-    private Long id;
+    private String id;
     @NotEmpty(message = "User lastname should not be empyt.")
     private String name;
     @NotEmpty(message = "User lastname should not be empyt.")

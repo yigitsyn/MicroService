@@ -9,6 +9,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.UUID;
+
 @RestController
 @RequestMapping("api/employee")
 public class EmployeeController {
@@ -19,6 +21,7 @@ public class EmployeeController {
     }
     @PostMapping
     public ResponseEntity<EmployeeDto> addEmployee(@RequestBody @Valid EmployeeDto employeedto) {
+        employeedto.setId(UUID.randomUUID().toString());
         return new ResponseEntity<>(employeeService.createEmployee(employeedto), HttpStatus.CREATED);
     }
     @GetMapping("{id}")

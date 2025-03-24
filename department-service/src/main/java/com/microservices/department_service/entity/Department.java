@@ -19,7 +19,6 @@ public class Department {
     @UuidGenerator
     private String id;
     private String departmentCode;
-
     private String departmentName;
     private String departmentDescription;
 

@@ -38,4 +38,6 @@ public class DepartmentService {
     public DepartmentDto getDepartment(String departmentCode) {
         return departmentMapper.departmentToDepartmentDto(departmentRepository.findByDepartmentCode(departmentCode).orElseThrow(()-> new DepartmentNotFoundException("Department is not found", "departmentCode", departmentCode)));
     }
+
+
 }
