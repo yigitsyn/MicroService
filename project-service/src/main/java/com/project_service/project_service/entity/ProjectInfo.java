@@ -28,7 +28,7 @@ public class ProjectInfo {
     private String projectDescription;
 
     @ElementCollection
-    private List<String> collaboratorsId;
+    private List<Long> collaboratorsId;
 
     private LocalDate creationTime;
 

@@ -4,33 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db7aaeb4-0adc-43e8-80be-1023012fe4d9" name="Changes" comment="Spring Cloud Config-Server is implemented.">
-      <change afterPath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/dto/EmployeeDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/dto/ProjectInfoDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/entity/ProjectInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/service/EmployeeClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/department-service/src/main/java/com/microservices/department_service/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/com/microservices/department_service/service/DepartmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-service/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/ProjectServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/controller/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/controller/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/dto1/CollaboratorsDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/dto1/DtoConverterMapStruct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/dto1/ProjectResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/entity/Project.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/repository/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/repository/ProjectRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/project-service/src/main/java/com/project_service/project_service/service/ProjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-service/src/test/java/com/project_service/project_service/ProjectServiceApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="db7aaeb4-0adc-43e8-80be-1023012fe4d9" name="Changes" comment="project-service with spring cloud, feign client and spring-config-server." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -189,8 +163,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.ProjectServiceApplication" />
-        <item itemvalue="Spring Boot.ApiGatewayApplication" />
         <item itemvalue="Spring Boot.ConfigServerApplication" />
+        <item itemvalue="Spring Boot.ApiGatewayApplication" />
         <item itemvalue="Spring Boot.ServiceRegistryApplication" />
       </list>
     </recent_temporary>
@@ -236,7 +210,7 @@
       <workItem from="1742152970745" duration="8000" />
       <workItem from="1742153020018" duration="169000" />
       <workItem from="1742175654628" duration="5110000" />
-      <workItem from="1742770285868" duration="9429000" />
+      <workItem from="1742770285868" duration="9759000" />
     </task>
     <task id="LOCAL-00001" summary="vs">
       <option name="closed" value="true" />
@@ -278,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736218725000</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="project-service with spring cloud, feign client and spring-config-server.">
+      <option name="closed" value="true" />
+      <created>1742850295016</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742850295016</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +282,7 @@
     <MESSAGE value="API Gateway is added. Eureka server properties are added." />
     <MESSAGE value="Project project mvc design is implemented. Converting an employeeId from a string to a long integer for UUID" />
     <MESSAGE value="Spring Cloud Config-Server is implemented." />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Cloud Config-Server is implemented." />
+    <MESSAGE value="project-service with spring cloud, feign client and spring-config-server." />
+    <option name="LAST_COMMIT_MESSAGE" value="project-service with spring cloud, feign client and spring-config-server." />
   </component>
 </project>
